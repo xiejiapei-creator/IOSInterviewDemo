@@ -13,7 +13,6 @@
 		E9A1541925E35D8300128708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A1541825E35D8300128708 /* Assets.xcassets */; };
 		E9A1541C25E35D8300128708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A1541A25E35D8300128708 /* LaunchScreen.storyboard */; };
 		E9A1541F25E35D8300128708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1541E25E35D8300128708 /* main.m */; };
-		E9A1542C25E35DCF00128708 /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1542B25E35DCF00128708 /* MultithreadingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +26,6 @@
 		E9A1541B25E35D8300128708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A1541D25E35D8300128708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9A1541E25E35D8300128708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E9A1542A25E35DCF00128708 /* MultithreadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingViewController.h; sourceTree = "<group>"; };
-		E9A1542B25E35DCF00128708 /* MultithreadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +58,6 @@
 		E9A1540B25E35D8200128708 /* PossibleInterviewQuestions */ = {
 			isa = PBXGroup;
 			children = (
-				E9A1542E25E35DD400128708 /* 多线程面试题 */,
 				E9A1542625E35D9A00128708 /* SupportingFiles */,
 				E9A1541D25E35D8300128708 /* Info.plist */,
 			);
@@ -81,15 +77,6 @@
 				E9A1541E25E35D8300128708 /* main.m */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		E9A1542E25E35DD400128708 /* 多线程面试题 */ = {
-			isa = PBXGroup;
-			children = (
-				E9A1542A25E35DCF00128708 /* MultithreadingViewController.h */,
-				E9A1542B25E35DCF00128708 /* MultithreadingViewController.m */,
-			);
-			path = "多线程面试题";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +149,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A1540E25E35D8200128708 /* AppDelegate.m in Sources */,
-				E9A1542C25E35DCF00128708 /* MultithreadingViewController.m in Sources */,
 				E9A1541F25E35D8300128708 /* main.m in Sources */,
 				E9A1541125E35D8200128708 /* SceneDelegate.m in Sources */,
 			);
