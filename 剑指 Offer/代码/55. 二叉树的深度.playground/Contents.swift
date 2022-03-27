@@ -31,7 +31,7 @@ class Solution
      */
     func treeDepth(_ rootNode: BinaryTreeNode?) -> Int
     {
-        // 叶子节点就返回深度为0
+        // 节点不存在就返回深度为0
         guard rootNode != nil else { return 0 }
         
         // 通过递归的方式获取左右子树的深度

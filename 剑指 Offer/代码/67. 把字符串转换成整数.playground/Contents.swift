@@ -4,7 +4,7 @@ import XCTest
 class Solution
 {
     /*
-     将字符串转换为整形
+     将字符串转换为整数
      - Parameters:
         - string: 需要转换成数字的字符串
      - Returns: 转换之后的整数

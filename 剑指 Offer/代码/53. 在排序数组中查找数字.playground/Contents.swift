@@ -111,7 +111,7 @@ class Solution
         }
         else
         {
-            // 如果中间数字的后面一个数字正在在数组末尾，则直接返回midIndex
+            // 如果中间数字正好在在数组末尾，则直接返回midIndex
             if midIndex == data.count - 1
             {
                 return midIndex

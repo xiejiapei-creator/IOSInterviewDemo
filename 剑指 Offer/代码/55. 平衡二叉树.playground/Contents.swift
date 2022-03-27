@@ -44,7 +44,7 @@ class Solution
             return false
         }
         
-        // 当最后遍历到树的根节点的时候，也就判断了整棵二叉树是不是平衡二叉树
+        // 当最后遍历到树的叶子节点的时候，也就判断了整棵二叉树是不是平衡二叉树
         return isBalancedTree_Solution1(rootNode!.left) && isBalancedTree_Solution1(rootNode!.right)
     }
     

@@ -14,7 +14,7 @@ class Solution
         // 用两个数small和big分别表示序列的最小值和最大值，首先把small初始化为1，big 初始化为2
         var small = 1, big = 2
         
-        // 因为这个序列至少要有两个数字，我们一直增加small到(1+s)/2为止
+        // 因为这个序列至少要有两个数字，我们一直增加small到(1+sum)/2为止
         let middle = (1+sum)/2
         //print("sum=\(sum)，middle=\(middle)")
         

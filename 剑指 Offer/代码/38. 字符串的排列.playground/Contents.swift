@@ -29,7 +29,7 @@ class Solution
     /**
      返回该字符串中字符的所有排列
      - Parameters:
-        - chars: 字符数组
+        - characters: 字符数组
         - startIndex: 开始排列的数组索引
      - Returns: 字符所有可能的排列
      */

@@ -14,9 +14,9 @@ class Solution
     {
         // 可以将x和y看成x轴和y轴上的坐标位置。第一次取数组中最右上角的数字
         var y = 0
-        var x = matrix.count - 1
+        var x = matrix[0].count - 1
         
-        while y <= matrix[0].count - 1 && x >= 0
+        while y <= matrix.count - 1 && x >= 0
         {
             // 如果该数字大于要查找的数字，则剔除这个数字所在的列
             if matrix[y][x] > targetNum

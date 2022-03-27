@@ -34,27 +34,34 @@ class Solution
      */
     func isSubTree(_ rootNode1: BinaryTreeNode?,_ rootNode2: BinaryTreeNode?) ->  Bool
     {
-        var result = false
-        
         // 两棵二叉树的一个或者两个根节点为空
-        if rootNode1 != nil && rootNode2 != nil
+        if rootNode2 == nil
         {
-            // 如果发现某一节点的值和树B的头节点的值相同，则调用isTree1ContainTree2进行第二步判断
-            if rootNode1 == rootNode2
-            {
-                result = isTree1ContainTree2(rootNode1, rootNode2)
-            }
-            
-            // 递归调用自身遍历二叉树A：在树A中查找与树B根节点的值一样的节点
-            if !result
-            {
-                result = isSubTree(rootNode1!.leftNode, rootNode2)
-            }
-            
-            if !result
-            {
-                result = isSubTree(rootNode1!.rightNode, rootNode2)
-            }
+            return true
+        }
+        
+        if rootNode1 == nil
+        {
+            return false
+        }
+        
+        var result = false
+
+        // 如果发现某一节点的值和树B的头节点的值相同，则调用isTree1ContainTree2进行第二步判断
+        if rootNode1 == rootNode2
+        {
+            result = isTree1ContainTree2(rootNode1, rootNode2)
+        }
+        
+        // 递归调用自身遍历二叉树A：在树A中查找与树B根节点的值一样的节点
+        if !result
+        {
+            result = isSubTree(rootNode1!.leftNode, rootNode2)
+        }
+        
+        if !result
+        {
+            result = isSubTree(rootNode1!.rightNode, rootNode2)
         }
         
         return result

@@ -16,7 +16,6 @@ class BinaryTreeNode: Equatable
         self.rightNode = rightNode
     }
     
-    // Global function 'XCTAssertEqual(_:_:_:file:line:)' requires that 'BinaryTreeNode' conform to 'Equatable'
     // 两个对象相互比较需要重写==运算符
     static func == (lhs: BinaryTreeNode, rhs: BinaryTreeNode) -> Bool
     {
@@ -161,53 +160,3 @@ class UnitTests: XCTestCase
 }
 
 UnitTests.defaultTestSuite.run()
-
-
-
- 
-func getNextNode(_ node: BinaryTreeNode) -> BinaryTreeNode?
-{
-    var tempNode = node
-    
-    // 如果一个节点有右子树，那么它的下一个节点就是它的右子树中的最左子节点
-    if (tempNode.rightNode != nil)
-    {
-        tempNode = tempNode.rightNode!
-        
-        while (tempNode.leftNode != nil)
-        {
-            tempNode = tempNode.leftNode!
-        }
-        
-        return tempNode
-    }
-    
-    // 当前节点没有父节点，那么当前节点没有下一节点
-    if (tempNode.parentNode == nil)
-    {
-        return nil
-    }
-    
-    // 如果节点是它父节点的左子节点，那么它的下一个节点就是它的父节点
-    if (tempNode == tempNode.parentNode!.leftNode)
-    {
-        return tempNode.parentNode!
-    }
-    // 沿着指向父节点的指针一直向上遍历，直到找到一个是它父节点的左子节点的节点
-    else
-    {
-        var localNode = tempNode.parentNode!
-        
-        while (localNode.parentNode != nil)
-        {
-            if (localNode == localNode.parentNode!.leftNode)
-            {
-                return localNode.parentNode!
-            }
-            
-            localNode = localNode.parentNode!
-        }
-        
-        return nil
-    }
-}

@@ -35,7 +35,7 @@ class Solution
         var rightTreeValue = [Int]()
         for i in index ..< squence.count - 1// -1是因为不能将末尾的根节点加入到右子树中
         {
-            // 一旦在右子树中出现节点值比根节点值大的则判断结果为false
+            // 一旦在右子树中出现节点值比根节点值小的则判断结果为false
             if squence[i] < rootValue
             {
                 return false

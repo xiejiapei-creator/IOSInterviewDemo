@@ -169,7 +169,7 @@ class UnitTests: XCTestCase
     {
         let nums = [1,2,3,2,2,2,5,4,2]
         XCTAssertEqual(2, solution.moreThanHalfNumber_Solution1(nums))
-        //XCTAssertEqual(2, solution.moreThanHalfNum_Solution2(nums))
+        XCTAssertEqual(2, solution.moreThanHalfNum_Solution2(nums))
     }
     
     // 不存在超过一半的数字

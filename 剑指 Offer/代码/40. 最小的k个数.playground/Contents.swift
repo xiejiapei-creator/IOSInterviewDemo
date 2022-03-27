@@ -25,6 +25,7 @@ class Solution
         var partitionIndex = partition(&numbers, start: startIndex, end: endIndex)// 分区位置
         
         // 如果基于数组的第k个数字来调整，则使得比第k个数字小的所有数字都位于数组的左边，比第k个数字大的所有数字都位于数组的右边
+        // 由于数组下标从0开始计算，所以对于最小的k个数，我们需要的是k - 1
         while partitionIndex != k - 1
         {
             if partitionIndex > k - 1

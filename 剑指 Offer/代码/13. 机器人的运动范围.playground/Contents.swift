@@ -60,7 +60,7 @@ class UnitTests: XCTestCase
         solution = Solution()
     }
     
-    // 10行10列 k为5
+    // 10行10列 k为5o
     func testCase1()
     {
         XCTAssertEqual(solution.movingCount(rows: 10, columns: 10, k: 5), 21)

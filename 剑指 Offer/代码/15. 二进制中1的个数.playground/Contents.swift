@@ -1,5 +1,6 @@
 import Foundation
 import XCTest
+import SwiftUI
 
 class Solution
 {
@@ -8,12 +9,12 @@ class Solution
           每次比较完将flag左移1位再比较，直到flag=0
      - Parameters:
         - num: 输入的整数
-     - Returns: i的2进制表示中1的个数
+     - Returns: num的2进制表示中1的个数
      */
     func numberOf1_flagSolution(_ num: Int) -> Int
     {
         var flag = 1// flag（初始值为1）
-        var count = 0// i的2进制表示中1的个数
+        var count = 0// num的2进制表示中1的个数
         
         while flag != 0// 直到flag=0
         {
@@ -35,11 +36,11 @@ class Solution
           那么1个整数二进制有多少个1就可以进行多少次这样操作
      - Parameters:
         - num: 输入的整数
-     - Returns: i的2进制表示中1的个数
+     - Returns: num的2进制表示中1的个数
      */
     func numberOf1_operationCountSolution(_ num: Int) -> Int
     {
-        var count = 0// i的2进制表示中1的个数
+        var count = 0// num的2进制表示中1的个数
         var localNum = num
         
         while localNum > 0// 直到1全部变成0 即localNum为0
@@ -112,5 +113,5 @@ UnitTests.defaultTestSuite.run()
 
 
 
-
+    
 
